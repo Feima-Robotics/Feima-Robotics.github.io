@@ -11,4 +11,4 @@ lang: en
 
 ## Documentation
 
-For detailed information about our products and solutions, please visit our [documentation](/docs/en/slam-sdk/).
+For detailed information about our products and solutions, please visit our [documentation](slam/).

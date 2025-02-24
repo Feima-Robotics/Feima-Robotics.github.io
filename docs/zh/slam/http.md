@@ -7,11 +7,7 @@ lang: zh
 
 Base URLs:
 
-* <a href="http://{{DeviceIP}}:19700">正式环境: http://{{DeviceIP}}:19700</a>
-
-# Authentication
-
-# Default
+* <a href="http://{{DeviceIP}}:19700">http://{{DeviceIP}}:19700</a>
 
 ## GET 获取版本信息
 
@@ -45,7 +41,7 @@ GET /slam/get_version
 | » message | null    | true | none |     | error message       |
 | » data    | object  | true | none |     | none                |
 
-# 控制
+
 
 ## GET 同步设备时间
 
@@ -273,8 +269,6 @@ GET /slam/end_work
 |-----|---------------------------------------------------------|------|-------------------------------------|
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | none | [CommonResult](#schemacommonresult) |
 
-# 控制/SLAM2000
-
 ## GET 设置转速
 
 GET /slam2000/set_motor_speed
@@ -493,8 +487,6 @@ GET /slam2000/set_wifi_country_mode
 | »» fre     | integer | true | none |     | 0: 2.4G;  1: 5G     |
 | »» setWifi | integer | true | none |     | 0: 失败；1: 成功         |
 
-# 状态
-
 ## GET 获取SN号
 
 GET /slam/get_serial_number
@@ -624,8 +616,6 @@ GET /slam/get_mapping_info
 | state | 4   |
 | state | 5   |
 | state | 100 |
-
-# 状态/SLAM2000
 
 ## GET 版本信息
 
@@ -960,8 +950,6 @@ GET /slam2000/get_ssd_info
 | »» free_space  | integer                   | true | none |     | MB                  |
 | »» used_space  | integer                   | true | none |     | MB                  |
 
-# GCP
-
 ## GET 删除控制点
 
 GET /slam/remove_record_point
@@ -1102,8 +1090,6 @@ GET /slam/record_point_with_name
 | » message | null    | true | none |     | error message       |
 | » data    | object  | true | none |     | none                |
 
-# GCP/SLAM2000
-
 ## GET 记录控制点
 
 GET /slam2000/record_point
@@ -1129,8 +1115,6 @@ GET /slam2000/record_point
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | none | Inline |
 
 ### 返回数据结构
-
-# RTK
 
 ## GET 设置NTrip服务器
 
@@ -1250,7 +1234,7 @@ GET /rtk/get_ntrip_settings
 | »» password    | string                            | true | none |     | none                |
 | »» port        | integer                           | true | none |     | none                |
 
-# 数据模型
+## 数据模型
 
 <h2 id="tocS_BaseResult">BaseResult</h2>
 

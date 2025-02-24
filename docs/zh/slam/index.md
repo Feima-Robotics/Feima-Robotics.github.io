@@ -103,7 +103,7 @@ WebSocket连接会主动发送JSON-RPC2.0通知
 ```json
 {
   "jsonrpc": "2.0",
-  "method": "OnSlamRecordPoint"
+  "method": "OnSlamRecordPoint",
   "params": {
     "mark_idex": 0,
     "time": 0,
@@ -121,7 +121,7 @@ WebSocket连接会主动发送JSON-RPC2.0通知
 ```json
 {
   "jsonrpc": "2.0",
-  "method": "OnDeviceStatus"
+  "method": "OnDeviceStatus",
   "params": {
     "app_version": 0,
     "sn": 0,
@@ -151,7 +151,7 @@ WebSocket连接会主动发送JSON-RPC2.0通知
 ```json
 {
   "jsonrpc": "2.0",
-  "method": "OnDeviceStatus"
+  "method": "OnDeviceStatus",
   "params": {
     "id": 29,
     "mission_id": 2,
@@ -218,7 +218,7 @@ typedef struct {
 } Pose;
 ```
 
-### 版本2：
+### 版本2
 
 点云数据和姿态数据组合传输，支持赋色点云
 
@@ -359,7 +359,6 @@ SAVE_CONFIG
 Read
 
 ```
-
 bssid=9c:9d:7e:89:3c:a6
 freq=5240
 ssid=SLAM_AP
@@ -375,7 +374,6 @@ p2p_device_address=52:41:1c:b5:3b:c2
 address=50:41:1c:b5:3b:c2
 uuid=2ac68d52-d10a-5acd-8a20-1aec276fc077
 ieee80211ac=1
-
 ```
 
 #### WiFi scan list
@@ -387,16 +385,12 @@ ieee80211ac=1
 Write
 
 ```
-
 SCAN
-
 ```
 
 Read
 
 ```
-
 bssid / frequency / signal level / flags / ssid
 9c:9d:7e:89:3c:a6 5240 -36     [WPA2-PSK-CCMP][WPS][ESS]       SLAM_AP
-
 ```

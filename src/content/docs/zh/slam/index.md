@@ -1,10 +1,7 @@
 ---
 layout: page
 title: SLAM SDK 文档概览
-lang: zh
 ---
-
-# SLAM 文档概览
 
 ## 服务发现
 
@@ -181,7 +178,7 @@ SLAM设备点云使用TCP传输，目前存在2个版本：
 
 单帧点云数据发送，结尾以#FEIMA#固定字符为结束字符，用于数据分隔。
 
-```c++
+```cpp
 typedef struct {
     float x;
     float y;
@@ -204,7 +201,7 @@ typedef struct {
 
 位置姿态数据发送，结尾以#FEIMA#固定字符为结束字符，用于数据分隔。
 
-```c++
+```cpp
 typedef struct {
     uint32_t id;
     double timestamp;
@@ -230,7 +227,7 @@ typedef struct {
 
 组合数结构为TPackageInfo+TFrame，#FEIMA#固定字符为结束字符，用于数据分隔。
 
-```C++
+```cpp
 #pragma pack(push)
 #pragma pack(1)
 typedef struct {

@@ -1,10 +1,7 @@
 ---
 layout: page
-title: SLAM SDK Documentation Overview
-lang: en
+title: SLAM Documentation Overview
 ---
-
-# SLAM Documentation Overview
 
 ## Service Discovery
 
@@ -183,7 +180,7 @@ gradually replace Version 1.
 
 Single frame point cloud data is sent with the fixed string #FEIMA# as the end character for data separation.
 
-```c++
+```cpp
 typedef struct {
     float x;
     float y;
@@ -206,7 +203,7 @@ typedef struct {
 
 Pose data is sent with the fixed string #FEIMA# as the end character for data separation.
 
-```c++
+```cpp
 typedef struct {
     uint32_t id;
     double timestamp;
@@ -234,7 +231,7 @@ Point cloud data and pose data are combined for transmission, and colored point 
 The combined data structure consists of TPackageInfo+TFrame, with the fixed string #FEIMA# as the end character for data
 separation.
 
-```c++
+```cpp
 #pragma pack(push)
 #pragma pack(1)
 typedef struct {

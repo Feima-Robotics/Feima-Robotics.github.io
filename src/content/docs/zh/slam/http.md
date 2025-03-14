@@ -1,9 +1,7 @@
 ---
 layout: page
-lang: zh
+title: SLAM HTTP API
 ---
-
-# SLAM HTTP API
 
 Base URLs:
 

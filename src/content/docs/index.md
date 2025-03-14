@@ -4,9 +4,10 @@ hide:
   - toc
 layout: redirect
 redirect_to: /docs/zh/
+title: 飞马机器人开发文档
+description: 欢迎访问飞马机器人开发文档！这里提供了全面的技术资源和指南，帮助您更好地使用我们的产品。 ✨
 ---
 
-# 欢迎访问飞马机器人开发文档 👋
 Welcome to Feima Robotics Development Documentation
 
 我们很高兴您能访问飞马机器人的开发文档！这里提供了全面的技术资源和指南，帮助您更好地使用我们的产品。 ✨

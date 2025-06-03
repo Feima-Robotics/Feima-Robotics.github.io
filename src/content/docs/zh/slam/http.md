@@ -1,6 +1,6 @@
 ---
 layout: page
-title: SLAM HTTP API
+title: SLAM SDK HTTP API
 ---
 
 Base URLs:
@@ -38,8 +38,6 @@ GET /slam/get_version
 | » status  | integer | true | none |     | 0 success, 1 failed |
 | » message | null    | true | none |     | error message       |
 | » data    | object  | true | none |     | none                |
-
-
 
 ## GET 同步设备时间
 

@@ -35,12 +35,12 @@ func DiscoverServices() error {
 
 SLAM devices support two communication methods: HTTP and WebSocket
 
-|             | HTTP                                                                                                                   | WebSocket                                                                                            |
-|-------------|------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| Address     | http://{DeviceIP}:19700                                                                                                | ws://{DeviceIP}:19700/ws                                                                             |
-| Data Format | Json                                                                                                                   |
-| Usage       | Get/Post requests                                                                                                      | JSON-RPC 2.0                                                                                         |
-| Pros & Cons | Pros: HTTP is easy to use, many debugging tools<br/>Cons: No bidirectional communication, cannot receive notifications | Pros: Supports notifications, has connection status<br/>Cons: Debugging is less convenient than HTTP |
+|             | WebSocket                                                                                            |
+|-------------|------------------------------------------------------------------------------------------------------|
+| Address     | ws://{DeviceIP}:19700/ws                                                                             |
+| Data Format |                                                                                                      |
+| Usage       | JSON-RPC 2.0                                                                                         |
+| Pros & Cons | Pros: Supports notifications, has connection status<br/>Cons: Debugging is less convenient than HTTP |
 
 ### HTTP
 

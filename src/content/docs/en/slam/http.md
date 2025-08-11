@@ -666,7 +666,7 @@ GET /slam2000/get_motor_board_state
 |-------------|---------------------------------------------------------|-------|---------------------------------|
 | 200         | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | none  | [MotorBoard](#schemamotorboard) |
 
-| 名称                 | 类型                              | 必选   | 约束   | 中文名 | 说明                  |
+| Name               | Type                            | Required | Constraints | Chinese Name | Description         |
 |--------------------|---------------------------------|------|------|-----|---------------------|
 | » status           | integer                         | true | none |     | 0 success, 1 failed |
 | » message          | null                            | true | none |     | error message       |
@@ -715,11 +715,11 @@ GET /slam2000/get_run_state
 |-------------|---------------------------------------------------------|-------|-------------------------------|
 | 200         | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | none  | [RunStatus](#schemarunstatus) |
 
-### 返回数据结构
+### Response Schema
 
-状态码 **200**
+Status Code **200**
 
-| 名称             | 类型                            | 必选   | 约束   | 中文名 | 说明                       |
+| Name           | Type                          | Required | Constraints | Chinese Name | Description              |
 |----------------|-------------------------------|------|------|-----|--------------------------|
 | » status       | integer                       | true | none |     | 0 success, 1 failed      |
 | » message      | null                          | true | none |     | error message            |

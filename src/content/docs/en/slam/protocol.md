@@ -267,3 +267,19 @@ func DiscoverServices() error {
     return err
 }
 ```
+
+# WebDAV
+
+SLAM devices support file transfer through [WebDAV protocol](http://www.webdav.org/). The WebDAV service is enabled by default, and the service port is **8080**.
+
+**Account**
+
+| Username  | Password  |
+|-----------|-----------|
+| normal    | normal    |
+
+**Test**
+
+```bash
+curl -u normal:normal http://{DeviceIP}:8080/
+```
